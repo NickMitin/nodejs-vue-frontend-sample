@@ -1,19 +1,25 @@
 <template>
   <div>
     <h1>This is a home page</h1>
-    <HelloWorld msg="Hello Vue 3.0 + Vite" />
+    <LoginForm class="login-form" />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 
-import HelloWorld from "../components/HelloWorld.vue";
+import LoginForm from "../components/LoginForm.vue";
 
 export default defineComponent({
   name: "Home",
   components: {
-    HelloWorld,
-  },
+    LoginForm
+},
 });
 </script>
+
+<style scoped>
+.login-form {
+    max-width: 400px;
+}
+</style>

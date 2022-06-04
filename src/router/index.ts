@@ -11,6 +11,11 @@ const routes = [
     name: "Setting",
     component: () => import("../views/Setting.vue"),
   },
+  {
+    path: "/stubs",
+    name: "Stubs",
+    component: () => import("../views/Stubs.vue"),
+  },
 ];
 
 export default createRouter({

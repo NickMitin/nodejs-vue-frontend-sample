@@ -11,9 +11,10 @@ export default defineConfig({
   server: {
     watch: {
       usePolling: true
-    }
+    },
+    host: '0.0.0.0'
   },
   optimizeDeps: {
-    include: ["@ant-design/icons-vue"],
-  },
+    include: ['@ant-design/icons-vue']
+  }
 })
